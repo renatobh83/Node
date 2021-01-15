@@ -45,19 +45,30 @@ font-size: 24px;
   }
   .container form {
     width: 100%;
-    display: none;
+    display: flex;
     justify-content: flex-end;
   }
   .container .list  {
     font-size: 24px;
     width: 100%;
- 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   }
   .container .list li{
+    background-color: white;
+    width: 32%;
       padding: 15px 0 ;
-      margin: 5px 0;
-      border: 1px dashed  black;
+      margin: 5px;
+     
+      box-shadow: 2px 1px 3px 0px black;
   }
 .container .list li .itenList{
   padding: 8px;
+}
+@media (max-width: 810px) {
+.container .list li{
+  width: 100%;
+}
 }
