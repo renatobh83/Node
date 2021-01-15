@@ -1,5 +1,7 @@
-console.log("Ola Java")
+const selectElement = document.querySelector('#view');
 
-// setTimeout(() => {
-//     window.location.reload();
-// }, 5000);
+selectElement.addEventListener('change', (event) => {
+ 
+  console.log(event.target.value)
+  
+});
