@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head}}
+<body>
+    Index HBS
+
+    {{#each Temp}}
+    <li>{{this.data.Time}} Temperatura : {{this.data.DHT11.Temperature}}</li>
+      {{/each}}
+</body>
+</html>
