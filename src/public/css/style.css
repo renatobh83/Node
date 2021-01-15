@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body,
+  input,
+  button {
+    font-family: 'Archivo', Arial, Helvetica, sans-serif;
+    outline: none;
+  }
+  .container {
+    width: 90vw;
+    max-width: 810px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  ul {
+      list-style: none;
+  }
