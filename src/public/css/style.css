@@ -27,7 +27,9 @@ body {
   .container ul {
       list-style: none;
   }
-
+a {
+  text-decoration-line: none;
+}
  .container .navBar {
 width: 100%;
 padding: 15px;
@@ -43,7 +45,7 @@ font-size: 24px;
   }
   .container form {
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: flex-end;
   }
   .container .list  {
