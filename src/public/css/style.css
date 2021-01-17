@@ -67,8 +67,29 @@ font-size: 24px;
 .container .list li .itenList{
   padding: 8px;
 }
+.boxMaxMin{
+  margin-top: 15px;
+  font-size: 19px;
+  width: 100%;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxMaxMin span {
+  color: red;
+}
+.flex {
+  margin-top: 6px;
+}
 @media (max-width: 810px) {
 .container .list li{
   width: 100%;
+}
+.boxMaxMin{
+  display: block;
+ 
+}
+.flex{
+  padding: 5px 14px;
 }
 }
