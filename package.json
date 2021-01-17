@@ -10,9 +10,11 @@
     "express-handlebars": "^5.2.0",
     "handlebars-dateformat": "^1.1.1",
     "hbs": "^4.1.1",
+    "moment": "^2.29.1",
     "mongodb": "^3.6.3",
     "mongoose": "^5.11.12",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "react-google-charts": "^3.0.15"
   },
   "scripts": {
     "start": "node src/server.js",

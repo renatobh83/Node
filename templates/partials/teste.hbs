@@ -1,10 +1,11 @@
-{{#each Temp}}
+{{!-- {{#each Temp}}
   <li>
 <div class="itenList">
    {{dateFormat  this.data.Time  "DD/MM/YYYY, HH:mm"}}
   Temperatura : {{this.data.DHT11.Temperature}}°c 
    Umidade {{this.data.DHT11.Humidity}}°c
 </div>
- 
+
     </li>
-{{/each}}
+{{/each}} --}}
+ {{> chart}}

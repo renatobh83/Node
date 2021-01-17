@@ -1,0 +1,41 @@
+<canvas id="myChart" width="400" height="200"></canvas>
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');;
+
+    const generateDate = (time) => {
+    const data = '{{time}}'
+    return data.split(",")
+    }
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+    labels: generateDate(),
+        datasets: [{
+            label: 'Temperatura',
+            data: [{{div}}],
+             backgroundColor: [
+                'rgba(255, 159, 64, 0.2)'
+           
+            ],    borderColor: [
+                'rgba(255, 99, 132, 1)',
+                
+            ],
+        fill: false,
+             borderWidth: 1
+        }]
+    },	
+    options: {
+        animation: {
+					duration: 0
+				},
+				responsive: true,
+				title: {
+					display: true,
+					text: 'Quarto Gabriel'
+				},
+			}
+});
+setTimeout(()=>{
+    location.reload()
+},300000)
+</script>
