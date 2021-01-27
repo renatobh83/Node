@@ -10,6 +10,7 @@ const diretorioPartialsTemplates = path.join(
   __dirname,
   "../templates/partials"
 );
+
 class AppController {
   constructor() {
     this.express = express();
@@ -18,18 +19,18 @@ class AppController {
   }
   middlewares() {
     this.express.use(express.json());
-    this.express.set("view engine", "hbs");
-    this.express.set("views", diretorioViewsTemplates);
-    hbs.registerPartials(diretorioPartialsTemplates);
-    hbs.registerHelper("dateFormat", require("handlebars-dateformat"));
-    this.express.use(express.static(diretorioPublico));
+    // this.express.set("view engine", "hbs");
+    // this.express.set("views", diretorioViewsTemplates);
+    // hbs.registerPartials(diretorioPartialsTemplates);
+    // hbs.registerHelper("dateFormat", require("handlebars-dateformat"));
+    // this.express.use(express.static(diretorioPublico));
     this.express.use(
       cors({
         origin: [
-          "https://dashboardmqtt.herokuapp.com/",
+          "https://dashboardmqtt.herokuapp.com",
           "http://localhost:3000",
         ],
-        credentials: true,
+        credentials: false,
       })
     );
   }
