@@ -26,9 +26,8 @@ class AppController {
     this.express.use(
       cors({
         origin: [
-          "http://localhost:3000",
           "https://dashboardmqtt.herokuapp.com/",
-          "http://192.168.1.47:3000",
+          "http://localhost:3000",
         ],
         credentials: true,
       })
