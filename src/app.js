@@ -27,7 +27,7 @@ class AppController {
       cors({
         origin: [
           "http://localhost:3000",
-          "https://cepam.herokuapp.com",
+          "https://dashboardmqtt.herokuapp.com/",
           "http://192.168.1.47:3000",
         ],
         credentials: true,
